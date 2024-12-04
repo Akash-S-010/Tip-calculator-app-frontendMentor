@@ -35,7 +35,7 @@ header h1 {
   margin-top: 4%;
   text-align: center;
   color: var(--very-dark-cyan);
-  letter-spacing: 17px;
+  letter-spacing: 15px;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
@@ -94,6 +94,9 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: translateY(-50%);
   pointer-events: none;
 }
+.contact-icon{
+  margin-top: 13px;
+}
 
 button {
   font-size: 24px;
@@ -107,7 +110,7 @@ button {
   transition: .2s;
 }
 
-button:hover {
+button.active {
   background: hsl(172, 67%, 45%);
 }
 
@@ -139,7 +142,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Align results and button */
 }
 
 .result {
@@ -192,8 +194,8 @@ button:hover {
 
 .attribution {
   position: absolute;
-  bottom: 0;
-  left: 34%;
+  bottom: 5%;
+  left: 40%;
   font-size: 12px;
 }
 
@@ -204,8 +206,15 @@ button:hover {
     gap: 2rem;
   }
 
-  .input-section,
-  .result-section {
-    flex: 1 1 100%;
+  .attribution {
+    left: 16%;
+    bottom: -25%;
+    font-size: 12px;
+  }
+  header h1 {
+    margin-top: 40px;
+  }
+  .container {
+    top:67%;
   }
 }
