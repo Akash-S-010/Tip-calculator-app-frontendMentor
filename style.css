@@ -183,9 +183,11 @@ button:hover {
 }
 
 .error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: red;
   font-size: 14px;
-  visibility: hidden;
 }
 
 .attribution {
